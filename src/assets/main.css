@@ -1,0 +1,119 @@
+@import './base.css';
+
+/* #app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  font-weight: normal;
+} */
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-default);
+}
+
+.img{
+  width: 220px;
+  height: 280px;
+}
+
+.rectangle {
+  position: absolute;
+  background-color: var(--background-man);
+  width: 100%;
+  height: 70%;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+
+.rectangle-woman {
+  position: absolute;
+  background-color: var(--background-woman);
+  width: 100%;
+  height: 70%;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+
+.card {
+  border-radius: 10px;
+  z-index: 20;
+  width: 80%;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-color: var(--background-default);
+  padding: 40px;
+  display: flex;
+}
+
+.rating.full{
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: var(--btn-man);
+  border: 2px solid var(--btn-man);
+}
+
+.rating.border{
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: none;
+  border: 2px solid var(--btn-man);
+}
+
+.rating.full-woman{
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: var(--btn-woman);
+  border: 2px solid var(--btn-woman);
+}
+
+.rating.border-woman{
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: none;
+  border: 2px solid var(--btn-woman);
+}
+
+@keyframes pulse {
+  0% {
+      background-color: #94A3B8;
+  }
+
+  50% {
+      background-color: #CBD5E1;
+  }
+
+  100% {
+      background-color: #94A3B8;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .card{
+    flex-direction: column;
+    height: auto;
+  }
+
+  .img{
+    width: 140px;
+    height: 180px;
+  }
+}
